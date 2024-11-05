@@ -1,0 +1,168 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-height: 100vh;
+            background-color: #1F252E;
+        }
+
+        /*nav bar display*/
+        header {
+            padding: 1.7rem 1rem;
+            background-color: #474854;
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            align-items: center;
+            background-color: transparent;
+        }
+
+        /*myportfolio size*/
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        /*myportfolio. design*/
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /*raw desgin for nav*/
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: .97rem;
+            font-weight: 600;
+            letter-spacing: .7px;
+            padding: 1rem;
+            padding: 0.4rem 1rem;
+        }
+
+        /*nav hover for Home, About, Services, Portfolio*/
+        nav a:hover {
+            color: #00E8F8;
+            border-radius: 1rem;
+            transition: all.3s ease-in-out;
+        }
+
+        /* alignment for section 1 */
+        section {
+            margin: 2rem 8.5rem;
+            ;
+        }
+
+        /*section for shadowed circle and picture*/
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem auto;
+        }
+
+        /*hello1! its me. Delacruz, Johnmark Q.*/
+        .main h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /*first UI/UX Design*/
+        .main p {
+            margin-top: 1rem;
+            font-size: .98rem;
+            color: #fff;
+        }
+
+        /*contact me button*/
+        #homepage-button{
+            margin-top: 9.50rem;
+            width: 200px;
+            height: 90px;
+            background-color: #1F252E;
+            font-size: 35px;
+            border: rgb(1, 250, 246) solid 3px;
+            border-radius: 0 0 30% 0;
+            transition-duration: 300ms;
+            color: hwb(176 2% 0%);
+        }
+
+        /*spacing sa icon*/
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            margin-top: 2.20rem;
+        }
+
+        /*display sa icon*/
+        .social a {
+            color: #00E8F8;
+            font-size: 1rem;
+            border: 1.6px solid #00E8F8;
+            border-radius: 50%;
+            padding: .35rem;
+            text-align: center;
+            width: 26px;
+        }
+
+        /*animation sa icon*/
+        .social a:hover {
+            color: #1F252E;
+            background-color: #00E8F8;
+            box-shadow: 0 0 20px #00E8F8;
+            transition: all .3s ease-in-out;
+        }
+
+        /*hello! its me*/
+        .main h1 span:nth-child(1) {
+            font-size: 1.5rem;
+        }
+        
+        /*shadowed circle*/
+        .circle{
+            width: 300px;
+            height: 300px;
+            align-items: right;
+            background-color: #00E8F8;
+            box-shadow: 0 0 100px #00E8F8;
+            background-position: 0 -95px;
+            border-radius: 50%;
+        }
+        
+        /*picture lob.png*/
+        .images {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            align-items: right;
+            top: 1px;
+            bottom: 50px;
+            right: 636px;
+        }
+
+        /*nav display*/
+        @media only screen and (max-width:480px) {
+            .menu {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            
+            nav {
+                position: absolute;
+                display: grid;
+                top: 75px;
+                text-align: center;
+                background-color: #474854;
+                left: -100%;
+                z-index: 0;
+                width: 100%;
+            }
+        }
